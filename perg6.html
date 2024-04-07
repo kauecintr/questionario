@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta 6</title>
+    <link rel="stylesheet" href="formu.css">
+</head>
+<body>
+    <h1>Pergunta número 6</h1>
+    <div class="quadrado-circular">
+        <form action="" method="">
+            <label class="perguntas" for="">Se eu fosse o Luciano, voce ainda gostaria de mim? (as duas alternativas estão certas)<img class="lucianjo" src="LUCIANO.png" alt="luciano"></label> <br> <br>
+            <input type="radio" id="alternativa1" name="alternativa" value="Sim">
+            <label for="alternativa1">Sim</label><br>
+            <input type="radio" id="alternativa2" name="alternativa" value="Não">
+            <label for="alternativa2">Não</label><br>
+            <button onclick="conferirResposta6(event)">Conferir resposta</button>
+            <div id="mensagem-acerto" class="hidden imagem-girando">
+                <img src="luciano-neves.png" alt="Imagem de parabéns">
+            </div>
+        </form>
+    </div>
+
+    <script src="formu.js"></script>
+</body>
+</html>

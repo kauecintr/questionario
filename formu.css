@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+body{
+    background-color: rgb(234, 248, 40);
+}
+
+h1{
+    font-family: Eagle Lake;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+
+p, #boas_vindas{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Copperplate', Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255);
+}
+
+.imagem-girando {
+    position: relative;
+    top: -25px; /* Ajuste a posição vertical conforme necessário */
+    z-index: 1; /* Garante que a imagem fique sobreposta aos outros elementos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: entradaGirando 0.7s linear forwards; /* animação de entrada e rotação */
+}
+
+@keyframes entradaGirando {
+    0% {
+        transform: scale(10) rotate(0deg); /* escala inicial e rotação inicial */
+    }
+    50% {
+        transform: scale(5) rotate(180deg); /* escala intermediária e rotação intermediária */
+    }
+    100% {
+        transform: scale(1) rotate(360deg); /* escala final e rotação completa */
+    }
+}
+
+
+
+
+form{
+    text-align: center;
+}
+
+.perguntas, .perguntas2, .perguntas3{
+    font-style: italic;
+    font-size: 40px;
+}
+
+#nome-correto, #nome-correto2, #nome-correto3{
+    font-size: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.botao-comeco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none; 
+}
+.emoji-frio {
+    width: 40px; /* Defina o tamanho desejado para a largura da imagem */
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+}
+
+label {
+    font-size: 24px; /* Defina o tamanho desejado para os labels */
+}
+
+button:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(234, 248, 40);
+}
+
+.quadrado-circular {
+    width: 410px; /* Defina a largura desejada para o quadrado */
+    height: 450px; /* Defina a altura desejada para o quadrado */
+    border: 2px solid #000; /* Adiciona uma borda sólida */
+    border-radius: 15px; /* Adiciona bordas circulares */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    display: flex; /* Usa flexbox para alinhar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin: 0 auto; /* Centraliza a div na página */
+}
+
+.lucianjo{
+    width: 120px; /* Defina o tamanho desejado para a largura da imagem */
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+}
+
+.nojo{
+    width: 40px; /* Defina o tamanho desejado para a largura da imagem */
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+}
+
